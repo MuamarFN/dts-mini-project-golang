@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 45px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left a {
+  display: block;
+  font-size: xx-large;
+  line-height: 65px;
+  float: right;
+  transition: all 0.5s;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  display: block;
+  line-height: 65px;
+  padding: 0 25px;
+  float: left;
+  transition: all 0.5s;
+}
+
+.wrapper {
+  padding-top: 65px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.btn-wrapper {
+  padding-bottom: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.create {
+  background-color: blue;
+  color: white;
+}
+
+.mark_as_done {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.edit {
+  background-color: slategray;
+  color: white;
+}
+
+footer {
+  height: 85px;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}

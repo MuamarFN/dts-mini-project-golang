@@ -1,0 +1,46 @@
+{{ define "layout" }}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Create Task Page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+  <link rel="stylesheet" href="/assets/stylesheet.css">
+  <link rel="stylesheet" href="/assets/responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <img class="logo" src="/data/images/icon_task.png">
+        <a style="color:white">Tasks</a>
+      </div>
+      <div class="header-right">
+        <a style="color:white">@Mu'amar Fitron Nasrulloh</a>
+      </div>
+    </div>
+  </header>
+
+  {{ template "main". }}
+
+  <footer>
+    <div class="container">
+      <img src="/data/images/footer_logo.png">
+      <p>Learn to code, learn to be creative.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+{{ end }}

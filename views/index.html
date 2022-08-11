@@ -1,0 +1,43 @@
+{{ template "layout" .}}
+{{ define "main" }}
+<div class="wrapper">
+  <div class="container">
+    <h1>Created Tasks</h1>
+    <div class="btn-wrapper">
+      <a href="/createTask" class="btn create">+ Create</a>
+    </div>
+    <table id="sortTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+      <thead>
+        <tr style="text-align: center;">
+          <th>Task</th>
+          <th style="width: 20%;">Assignee</th>
+          <th style="width: 10%;">Deadline</th>
+          <th style="width: 20%;">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ if .}}
+        <tr>
+          <td>{{ .Task }}</td>
+          <td>{{ .Assignee }}</td>
+          <td>{{ .Deadline }}</td>
+          <td style="text-align: center;">
+            <div class="btn-column">
+              {{ if .Status }}
+              <a class="btn mark_as_done">Done</a>
+              {{ else }}
+              <a href="#" class="btn mark_as_done">Mark as Done</a>
+              {{ end }}
+              <a href="#" class="btn edit">Edit</a>
+            </div>
+          </td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+    <script>
+      $('#sortTable').DataTable();
+    </script>
+  </div>
+</div>
+{{ end }}
